@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_sexmode/config/themes/app_theme.dart';
+import 'package:widgets_sexmode/presentation/Screns/cards/cards_screens.dart';
+import 'package:widgets_sexmode/presentation/Screns/home/buttons/buttons_screen.dart';
+import 'package:widgets_sexmode/presentation/Screns/home/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,13 +13,15 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      theme: AppTheme(selectedColor: 1).getTheme(),
+      home: const HomeScreen(),
+      routes: {
+        "/buttons":(context) =>const ButtonsScreen(),
+        
+        "/cards":(context) => const CardScreen(),
+      },
     );
   }
 }
