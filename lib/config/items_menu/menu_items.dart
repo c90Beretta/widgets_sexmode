@@ -30,5 +30,10 @@ const appMenuItems = <MenuItem>[
   link: "/cards", 
   icon: Icons.credit_card,
   ),
+
+  MenuItem(title:"Tickets", 
+  subtittle: "Prueba de Tickets",
+  link: "/tickets", 
+  icon: Icons.airplane_ticket_outlined),  
   
 ];

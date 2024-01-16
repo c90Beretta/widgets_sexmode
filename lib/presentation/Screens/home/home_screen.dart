@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Flutter + Material 3"),
+        title: const Text("Esto es Una Prueba de Tarjetas"),
       ),
       body: const _Homeview(),
     );
@@ -55,13 +55,8 @@ class _CustomListTile extends StatelessWidget {
       title: Text(menuitem.title),
       subtitle: Text(menuitem.subtittle),
       onTap: () {
-
         //Navegador HomeScreen
         context.push(menuitem.link);
-
-
-
-
         // Navigator.of(context).push(MaterialPageRoute(
           // builder:(context) => const ButtonsScreen() ));
       },
