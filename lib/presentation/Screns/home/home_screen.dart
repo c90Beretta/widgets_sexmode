@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_sexmode/config/items_menu/menu_items.dart';
-import 'package:widgets_sexmode/presentation/Screns/home/buttons/buttons_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+ static const String name = "home_screen";
+
+
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Flutter + Material 3"),
@@ -53,7 +57,7 @@ class _CustomListTile extends StatelessWidget {
       onTap: () {
 
         //Navegador HomeScreen
-        Navigator.pushNamed(context, menuitem.link);
+        context.push(menuitem.link);
 
 
 
