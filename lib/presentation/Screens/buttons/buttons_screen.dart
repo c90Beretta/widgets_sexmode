@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:widgets_sexmode/config/themes/app_theme.dart';
 class ButtonsScreen extends StatelessWidget {
   const ButtonsScreen({super.key});
 static const String name = "buttons_screen";
@@ -21,7 +22,7 @@ static const String name = "buttons_screen";
 }
 
 class BottonsView extends StatelessWidget {
-static const test = Icons.circle;
+  final bool isIconChanged = false;
   const BottonsView({
     super.key,
   });
@@ -29,6 +30,8 @@ static const test = Icons.circle;
 
   @override
   Widget build(BuildContext context) {
+  final colors = Theme.of(context).colorScheme;
+
     return  SizedBox(
       width: double.infinity,
       child: Padding(padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
@@ -41,14 +44,62 @@ static const test = Icons.circle;
             
              ElevatedButton.icon(onPressed: () {},
              icon: const Icon(Icons.access_alarm_rounded),label: const Text("Elevated Icon")),
-             // ignore: prefer_typing_uninitialized_variables
-             ElevatedButton(onPressed: () { var test;
-              // ignore: void_checks
-              return test;},
-             child: const Icon(Icons.circle_rounded),)
+             const ElevatedButton(onPressed: null,
+             child: Icon(Icons.circle_rounded)),
+             
+             FilledButton(onPressed: (){}, child: const Text("filled")),
+             FilledButton.icon(onPressed: (){}, 
+             icon: const Icon(Icons.favorite), label: const Text("filled Icon")),
+             OutlinedButton(onPressed: (){}, child: const Text("Outlined Button")),
+             OutlinedButton.icon(onPressed: (){}, icon: const Icon(Icons.star_border_outlined), label: const Text("Outlined Icon")),
+             TextButton(onPressed: (){}, child: const Text("TextButton")),
+             TextButton.icon(onPressed: (){}, label: const Text("TextButton"), icon: const Icon(Icons.text_fields_rounded),),
+             CloseButton(onPressed: () {null;}
+             ,),
+
+
+              const CustomButtons(),
+
+
+
+            IconButton(onPressed: (){}, icon: const Icon(Icons.app_registration_rounded)),
+             IconButton(onPressed: (){}, icon: const Icon(Icons.app_registration_rounded),
+             style: ButtonStyle(
+            backgroundColor: MaterialStatePropertyAll(colors.primary),
+            iconColor: const MaterialStatePropertyAll(Colors.white),
+            // splashFactory:InteractiveInkFeatureFactory(InkSplash(color: Colors.amber)) 
+             ),
+             )
              
             ],
         ), 
+      ),
+    );
+  }
+}
+
+
+
+class CustomButtons extends StatelessWidget {
+  const CustomButtons({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+    
+
+    return  ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: colors.primary,
+        child: InkWell(
+          onTap: () {
+            
+          },
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text("hola Mundo", style: TextStyle(color: Colors.white),)),
+        ),
       ),
     );
   }
