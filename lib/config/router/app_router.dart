@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:widgets_sexmode/presentation/Screens/cards/cards_persons.dart';
 import 'package:widgets_sexmode/presentation/Screens/cards/cards_screens.dart';
 import 'package:widgets_sexmode/presentation/Screens/buttons/buttons_screen.dart';
 import 'package:widgets_sexmode/presentation/Screens/home/home_screen.dart';
@@ -30,5 +31,17 @@ final appRouter = GoRouter(
       path: '/tickets',
       builder: (context, state) => const TicketsScreens(),
     ),
+
+    //CARDS ROUTES-------------------
+
+
+    GoRoute(
+      path: "/person",
+      builder: (context, state) => const Personas(),)
+
+
+
+
+
   ],
 );
