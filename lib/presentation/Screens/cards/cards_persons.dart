@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_sexmode/presentation/Screens/cards/cards_screens.dart';
+import 'package:widgets_sexmode/presentation/Screens/home/home_screen.dart';
 import 'cards_widgets/cards_widgets.dart';
 
 class Personas extends StatelessWidget {
@@ -18,8 +19,8 @@ class Personas extends StatelessWidget {
           icon: const Icon(Icons.arrow_back),
           color: colors.primary,
           onPressed: () {
-             Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => const CardScreen()));
+             Navigator.of(context).pop(
+            MaterialPageRoute(builder: (context) => const HomeScreen()));
           },
         )),
         body: const PerfilScreen(),
