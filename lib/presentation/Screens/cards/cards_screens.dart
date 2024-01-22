@@ -96,11 +96,11 @@ class _CardType2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-final colors = Theme.of(context).colorScheme;
+// final colors = Theme.of(context).colorScheme;
 
     return Card(
       shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(const Radius.circular(12)),
+        borderRadius: BorderRadius.all( Radius.circular(12)),
         side: BorderSide(
         )
       ),
@@ -184,10 +184,10 @@ class _CardType4 extends StatelessWidget {
       elevation: elevation,
       child: Stack(
         children: [
-          Image.network("https://picsum.photos/id/${elevation.toInt()}/600/350",
-          height: 350,
-          fit: BoxFit.cover,
-          ),
+          // Image.network("https://picsum.photos/id/${elevation.toInt()}/600/350",
+          // height: 350,
+          // fit: BoxFit.cover,
+          // ),
 
 
           Align(

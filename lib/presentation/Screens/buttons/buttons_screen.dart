@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widgets_sexmode/config/themes/app_theme.dart';
 class ButtonsScreen extends StatelessWidget {
   const ButtonsScreen({super.key});
 static const String name = "buttons_screen";
