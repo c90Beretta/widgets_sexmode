@@ -1,3 +1,5 @@
+export 'package:widgets_sexmode/presentation/Screens/snackbar/snackbar_screen.dart';
+export 'package:widgets_sexmode/presentation/Screens/tickets/tickets_screen.dart';
 export 'package:flutter/material.dart';
 export 'package:widgets_sexmode/presentation/Screens/animated/animated_screen.dart';
 export 'package:widgets_sexmode/presentation/Screens/app_tutorial/app_tutorial_screen.dart';
