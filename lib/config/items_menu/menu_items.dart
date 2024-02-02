@@ -53,7 +53,7 @@ const appMenuItems = <MenuItem>[
       link: "/Infinite_Scroll_Screen",
       icon: Icons.screen_rotation_alt_outlined),
   MenuItem(
-      title: "Snackbar Screen",
+      title: "Snackbar y Dialogos",
       subtittle: "SnackBar Y detalles Emergentes",
       link: "/Snackbar_Screen",
       icon: Icons.check_circle_outlined),
