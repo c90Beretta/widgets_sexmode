@@ -50,8 +50,8 @@ setState(() {
         child: AnimatedContainer(
           duration: const Duration( milliseconds: 400),
           curve: Curves.elasticInOut,
-          width: width <= 0 ? 0:width,
-          height: height <= 0 ? 0:height,
+          width: width,
+          height: height,
           decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.circular(borderRadius < 0 ? 0: borderRadius)
