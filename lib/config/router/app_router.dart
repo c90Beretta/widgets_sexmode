@@ -30,10 +30,9 @@ final appRouter = GoRouter(
       path: '/progress',
       builder: (context, state) => const ProgresScreen(),
     ),
-  
     GoRoute(
       name: AppTutorialScreen.name,
-      path: '/tutorial_screen"',
+      path: '/tutorial_screen',
       builder: (context, state) => const AppTutorialScreen(),
     ),
     GoRoute(

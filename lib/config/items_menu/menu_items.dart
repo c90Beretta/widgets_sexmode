@@ -48,15 +48,15 @@ const appMenuItems = <MenuItem>[
       link: "/UI_Controls_Screen",
       icon: Icons.format_underline_rounded),
   MenuItem(
-      title: "Tickets",
-      subtittle: "Prueba de Tickets",
-      link: "/tickets",
-      icon: Icons.airplane_ticket_outlined),
-  MenuItem(
       title: "App Tutorial",
       subtittle: "Tutorial Apps Screen",
       link: "/tutorial_screen",
       icon: Icons.folder_special_outlined),
+  MenuItem(
+      title: "Tickets",
+      subtittle: "Prueba de Tickets",
+      link: "/tickets",
+      icon: Icons.airplane_ticket_outlined),
   MenuItem(
       title: "Infinite Scroll",
       subtittle: "Scroll Infinito de Imagenes",
