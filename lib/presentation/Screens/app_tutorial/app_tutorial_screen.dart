@@ -67,7 +67,7 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
 
         children: [
           PageView(
-            scrollDirection: Axis.vertical,
+            scrollDirection: Axis.horizontal,
             controller: pageViewController,
             
             children: 
@@ -97,9 +97,9 @@ class _AppTutorialScreenState extends State<AppTutorialScreen> {
             Positioned(
               bottom: 30,
               right: 30,
-              child: FadeInUp(
+              child: FadeInRight(
                 from: 15,
-                delay: const Duration(seconds: 1),
+                delay: const Duration(milliseconds: 300),
                 child: FilledButton(
                 onPressed:() => context.pop(), 
                 child: const Text("Comenzar")),

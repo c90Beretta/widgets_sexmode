@@ -53,13 +53,13 @@ const appMenuItems = <MenuItem>[
       link: "/tutorial_screen",
       icon: Icons.folder_special_outlined),
   MenuItem(
-      title: "Tickets",
-      subtittle: "Prueba de Tickets",
-      link: "/tickets",
-      icon: Icons.airplane_ticket_outlined),
-  MenuItem(
       title: "Infinite Scroll",
       subtittle: "Scroll Infinito de Imagenes",
       link: "/Infinite_Scroll_Screen",
       icon: Icons.screen_rotation_alt_outlined),
+  MenuItem(
+      title: "Tickets",
+      subtittle: "Prueba de Tickets",
+      link: "/tickets",
+      icon: Icons.airplane_ticket_outlined),
 ];
