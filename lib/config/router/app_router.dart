@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:widgets_sexmode/presentation/Screens/RecordatorioScreen/recordatorioscreen.dart';
 import 'package:widgets_sexmode/presentation/Screens/screens.dart';
 
 // GoRouter configuration
@@ -53,6 +54,11 @@ final appRouter = GoRouter(
     GoRoute(
       name: AnimatedScreen.name,
       path: "/animatedscreens",
-      builder: (context, state) => const AnimatedScreen(),)
+      builder: (context, state) => const AnimatedScreen(),),
+    GoRoute(
+      name: RecordatorioScreen.name,
+      path: "/recordatorioscreens",
+      builder:(context, state) => const RecordatorioScreen(),
+      )
   ],
 );

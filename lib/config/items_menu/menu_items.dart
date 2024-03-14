@@ -62,4 +62,9 @@ const appMenuItems = <MenuItem>[
       subtittle: "Prueba de Tickets",
       link: "/tickets",
       icon: Icons.airplane_ticket_outlined),
+  MenuItem(
+      title: "Recordatorio App",
+      subtittle: "Agrega Recordatorios",
+      link: "/recordatorioscreens",
+      icon: Icons.alarm_add_sharp)
 ];
