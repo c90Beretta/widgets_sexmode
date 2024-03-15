@@ -66,5 +66,10 @@ const appMenuItems = <MenuItem>[
       title: "Recordatorio App",
       subtittle: "Agrega Recordatorios",
       link: "/recordatorioscreens",
-      icon: Icons.alarm_add_sharp)
+      icon: Icons.alarm_add_sharp),
+  MenuItem(
+      title: "Contador",
+      subtittle: "Contador de Operador Simple",
+      link: "/counterscreens",
+      icon: Icons.numbers_rounded)
 ];
