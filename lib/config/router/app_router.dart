@@ -2,6 +2,11 @@ import 'package:go_router/go_router.dart';
 import 'package:widgets_sexmode/presentation/Screens/RecordatorioScreen/recordatorioscreen.dart';
 import 'package:widgets_sexmode/presentation/Screens/counter/counter_screen.dart';
 import 'package:widgets_sexmode/presentation/Screens/screens.dart';
+import 'package:widgets_sexmode/presentation/Screens/cards/cards_persons.dart';
+import 'package:widgets_sexmode/presentation/Screens/cards/cards_screens.dart';
+import 'package:widgets_sexmode/presentation/Screens/buttons/buttons_screen.dart';
+import 'package:widgets_sexmode/presentation/Screens/home/home_screen.dart';
+import 'package:widgets_sexmode/presentation/Screens/tickets/tickets_screen.dart';
 
 // GoRouter configuration
 final appRouter = GoRouter(
