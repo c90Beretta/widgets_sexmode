@@ -58,6 +58,11 @@ const appMenuItems = <MenuItem>[
       link: "/Infinite_Scroll_Screen",
       icon: Icons.screen_rotation_alt_outlined),
   MenuItem(
+      title: "Contador",
+      subtittle: "Contador de Operador Simple",
+      link: "/counterscreens",
+      icon: Icons.numbers_rounded),
+  MenuItem(
       title: "Tickets",
       subtittle: "Prueba de Tickets",
       link: "/tickets",
@@ -68,8 +73,8 @@ const appMenuItems = <MenuItem>[
       link: "/recordatorioscreens",
       icon: Icons.alarm_add_sharp),
   MenuItem(
-      title: "Contador",
-      subtittle: "Contador de Operador Simple",
-      link: "/counterscreens",
-      icon: Icons.numbers_rounded)
+    title: "Theme Screen", 
+    subtittle: "Modificador de Temas", 
+    link: "/themescreens", 
+    icon: Icons.palette_outlined)
 ];

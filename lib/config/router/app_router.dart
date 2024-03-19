@@ -1,6 +1,4 @@
 import 'package:go_router/go_router.dart';
-import 'package:widgets_sexmode/presentation/Screens/RecordatorioScreen/recordatorioscreen.dart';
-import 'package:widgets_sexmode/presentation/Screens/counter/counter_screen.dart';
 import 'package:widgets_sexmode/presentation/Screens/screens.dart';
 
 
@@ -66,6 +64,10 @@ final appRouter = GoRouter(
       name: CounterScreen.name,
       path: "/counterscreens",
       builder:(context, state) => const CounterScreen(),
-      )
+      ),
+      GoRoute(
+        name: ThemeScreens.name,
+        path: "/themescreens", 
+        builder: (context, state) => const ThemeScreens()),
   ],
 );

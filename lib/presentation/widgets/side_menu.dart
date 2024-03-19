@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_sexmode/config/items_menu/menu_items.dart';
@@ -41,6 +42,8 @@ class _SideMenuState extends State<SideMenu> {
 
       },
       children:  [
+        
+
         Padding(
           padding:EdgeInsets.fromLTRB(28, hasNotch ? 10: 20, 15, 10),
           child: const Text("Main"), ),
@@ -65,7 +68,24 @@ class _SideMenuState extends State<SideMenu> {
           Text("More Options"), ),
 
         ...appMenuItems
-        .sublist(3,appMenuItems.length)
+        .sublist(3,8)
+        .map((item) =>
+        NavigationDrawerDestination(
+          icon: Icon(item.icon),
+          label: Text(item.title),
+        )),
+
+        const Padding(padding:EdgeInsets.fromLTRB(28, 10, 15, 10),
+          child: 
+          Divider(),
+        ),
+
+        const Padding(padding: EdgeInsets.fromLTRB(28, 10, 15, 10),
+          child: 
+          Text("On Work"),),
+        
+        ...appMenuItems
+        .sublist(8,11)
         .map((item) =>
         NavigationDrawerDestination(
           icon: Icon(item.icon),

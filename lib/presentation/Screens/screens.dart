@@ -11,3 +11,12 @@ export 'package:widgets_sexmode/presentation/Screens/progress/progress_screen.da
 export 'package:widgets_sexmode/presentation/Screens/ui_controls/ui_controls_screens.dart';
 export 'package:widgets_sexmode/presentation/widgets/side_menu.dart';
 export 'package:widgets_sexmode/config/items_menu/menu_items.dart';
+export 'package:widgets_sexmode/presentation/Screens/theme_screen/theme_screens.dart';
+export 'package:widgets_sexmode/presentation/Screens/counter/counter_screen.dart';
+export 'package:widgets_sexmode/presentation/providers/counter_provider.dart';
+export 'package:widgets_sexmode/presentation/providers/theme_provider.dart';
+export 'package:widgets_sexmode/config/router/app_router.dart';
+export 'package:widgets_sexmode/config/themes/app_theme.dart';
+export 'package:flutter_riverpod/flutter_riverpod.dart';
+export 'package:widgets_sexmode/presentation/Screens/RecordatorioScreen/recordatorioscreen.dart';
+export 'package:widgets_sexmode/presentation/Screens/screens.dart';
