@@ -8,7 +8,7 @@ class CounterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(title: const Text("Counter Screen")),
-      body: Contador(),
+      body: const Contador(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
          
