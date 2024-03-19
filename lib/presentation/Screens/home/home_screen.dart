@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_sexmode/config/items_menu/menu_items.dart';
+import 'package:widgets_sexmode/presentation/widgets/side_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,11 +12,17 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    // Uso del SideBar
+    final  scaffoldKey = GlobalKey<ScaffoldState>();
+
+
     return Scaffold(
+      key: scaffoldKey,
       appBar: AppBar(
         title: const Text("Esto es Una Prueba de Tarjetas"),
       ),
       body: const _Homeview(),
+      drawer: SideMenu(scaffoldKey: scaffoldKey,)
     );
   }
 }

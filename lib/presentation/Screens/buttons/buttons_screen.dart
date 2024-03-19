@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widgets_sexmode/config/themes/app_theme.dart';
 class ButtonsScreen extends StatelessWidget {
   const ButtonsScreen({super.key});
 static const String name = "buttons_screen";
@@ -50,7 +49,7 @@ class BottonsView extends StatelessWidget {
              FilledButton(onPressed: (){}, child: const Text("filled")),
              FilledButton.icon(onPressed: (){}, 
              icon: const Icon(Icons.favorite), label: const Text("filled Icon")),
-             OutlinedButton(onPressed: (){}, child: const Text("Outlined Button")),
+             OutlinedButton(onPressed: (){}, child:  Text("Outlined Button", style: TextStyle(color: colors.primary),)),
              OutlinedButton.icon(onPressed: (){}, icon: const Icon(Icons.star_border_outlined), label: const Text("Outlined Icon")),
              TextButton(onPressed: (){}, child: const Text("TextButton")),
              TextButton.icon(onPressed: (){}, label: const Text("TextButton"), icon: const Icon(Icons.text_fields_rounded),),
