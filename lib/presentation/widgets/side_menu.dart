@@ -68,7 +68,7 @@ class _SideMenuState extends State<SideMenu> {
           Text("More Options"), ),
 
         ...appMenuItems
-        .sublist(3,8)
+        .sublist(3,9)
         .map((item) =>
         NavigationDrawerDestination(
           icon: Icon(item.icon),
@@ -85,7 +85,7 @@ class _SideMenuState extends State<SideMenu> {
           Text("On Work"),),
         
         ...appMenuItems
-        .sublist(8,11)
+        .sublist(9,appMenuItems.length)
         .map((item) =>
         NavigationDrawerDestination(
           icon: Icon(item.icon),
